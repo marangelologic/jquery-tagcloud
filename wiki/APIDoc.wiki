@@ -22,8 +22,8 @@ sort: Comparator function used for sort the tags before displaying, or false if 
 
 click: Event handler which receives the tag name as first parameter and the original click event as second. The preventDefault() is called on event before passing so don't bother.
 
-   default: you should'nt use the default, but:
-          function(tag, event) {alert(tag);return false}
+   default: does nothing:
+          function(tag, event) {}
 
 
 maxFontSizeEm: Size of the largest tag in the cloud in css 'em'. The smallest one's size is 1em so this value is the ratio of the smallest and largest sizes.
