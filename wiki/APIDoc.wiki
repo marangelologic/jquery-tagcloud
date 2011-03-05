@@ -7,7 +7,7 @@ objects with "tag" and "count" attributes. E.g.:
 
 {{{
 var tags = [{tag: "computers", count: 56}, {tag: "mobile" , count :12}, ... ];
-$("#tagcloud"}.tagCloud(tags);
+$("#tagcloud").tagCloud(tags);
 }}}
 
  The size of the tag in the cloud will be determined by the count values: tags with larger count values will be displayed larger. The count values are normalized so you can use any number. The tag with smallest (minimal, to be exact :)) count value will be displayed using '1em' size, the largest size is configurable. Currently a linear range is used, maybe later an exponential one will be developed.
